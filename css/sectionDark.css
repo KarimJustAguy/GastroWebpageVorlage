@@ -1,0 +1,40 @@
+.darkSection {
+    background-color: var(--Avenue-dark);
+    color: var(--Avenue-white-read);
+}
+
+.textContentDarkSection {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.textContentDarkSection h3 {
+    color: var(--Avenue-dark-grey-read);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Strich */
+.textContentDarkSection h3::after {
+    background: var(--Avenue-gold);
+    content: "";
+    display: block;
+    width: 15rem;
+    height: 1px;
+    margin: 15px auto 0;
+}
+
+.textContentDarkSection p {
+    color: var(--Avenue-white-read);
+    font-style: var(--paragraph-font);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+

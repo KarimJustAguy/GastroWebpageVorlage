@@ -1,0 +1,43 @@
+.gridContent {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--Avenue-white);
+    display: block;
+    width: 100%;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.masonry-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design in 2 Schritten */
+@media (max-width: 900px) {
+    .pictureContent {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .pictureContent {
+        column-count: 1;
+    }
+}

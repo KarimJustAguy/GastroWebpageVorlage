@@ -1,0 +1,58 @@
+.whiteSection {
+    background-color: var(--Avenue-white);
+    color: var(--Avenue-dark-read);
+}
+
+.textContentWhiteSection {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.textContentWhiteSection h3 {
+    color: var(--Avenue-dark-grey-read);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.textContentWhiteSection h2 {
+    color: var(--Avenue-dark-grey-read);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Strich */
+.textContentWhiteSection h3::after {
+    background: var(--Avenue-gold);
+    content: "";
+    display: block;
+    width: 15rem;
+    height: 1px;
+    margin: 15px auto 0;
+}
+.textContentWhiteSection h2::after {
+    background: var(--Avenue-gold);
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 1px;
+    margin: 15px auto 0;
+}
+
+.textContentWhiteSection p {
+    color: var(--Avenue-dark-read);
+    font-style: var(--paragraph-font);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+

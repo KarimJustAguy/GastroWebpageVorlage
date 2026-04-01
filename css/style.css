@@ -1,0 +1,26 @@
+/* Entfernt die weißen Ränder */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blackSection {
+    background-color: #121212;
+    color: white;
+}
+
+.whiteSection {
+    background-color: #F9F7F2;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    height: 80vh; /* Füllt die ganze Bildschirmhöhe */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
