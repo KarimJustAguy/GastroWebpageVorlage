@@ -31,13 +31,13 @@
 
 /* Responsive Design in 2 Schritten */
 @media (max-width: 900px) {
-    .pictureContent {
+    .gridContent {
         column-count: 2;
     }
 }
 
 @media (max-width: 600px) {
-    .pictureContent {
+    .gridContent {
         column-count: 1;
     }
 }

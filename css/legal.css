@@ -1,0 +1,95 @@
+/* Volle Höhe für den Hintergrund */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.legal-background {
+    background-image: url('../files/impressumAgbsBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.legal-container {
+    background: rgba(255, 253, 245, 0.95);
+    max-width: 900px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.legal-header h3 {
+    color: var(--Avenue-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.legal-header h1 {
+    font-family: var(--headline-font), serif;
+    color: var(--Avenue-dark);
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.gold-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--Avenue-gold);
+    margin: 20px auto;
+}
+
+.legal-content h2 {
+    font-size: 1.2rem;
+    color: var(--Avenue-dark);
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.legal-content p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.legal-back-button {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.legal-back-button a {
+    color: var(--Avenue-gold);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.legal-back-button a:hover {
+    text-decoration: underline;
+}
+
+.legal-container::-webkit-scrollbar {
+    width: 6px;
+}
+.legal-container::-webkit-scrollbar-thumb {
+    background: var(--Avenue-gold);
+    border-radius: 10px;
+}

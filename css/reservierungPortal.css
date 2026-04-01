@@ -1,4 +1,4 @@
-/* Grund-Setup */
+/* Manager */
 :root {
     --bg-color: #f4f7f6;
     --card-bg: #ffffff;
@@ -41,7 +41,6 @@ body {
     outline: none;
 }
 
-/* Tabellen-Styling */
 .res-table {
     width: 100%;
     border-collapse: collapse;
@@ -80,7 +79,7 @@ body {
 }
 
 .date-cell {
-    font-family: monospace; /* Datum ist so leichter lesbar */
+    font-family: monospace;
     font-size: 0.95rem;
 }
 

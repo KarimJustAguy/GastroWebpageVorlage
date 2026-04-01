@@ -1,0 +1,148 @@
+.reservation-container {
+    min-height: 100vh;
+    background-color: var(--Avenue-dark);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+
+    /* Abstände */
+    box-sizing: border-box;
+    padding: 100px 10%;
+    width: 100%;
+}
+
+/* 2. Linker Container: Text-Info */
+.reservation-info {
+    color: var(--Avenue-white);
+}
+
+.reservation-info h3 {
+    color: var(--Avenue-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.reservation-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.benefits li {
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    font-size: 1rem;
+    color: var(--Avenue-white);
+}
+
+/* 2. Custom list-style-icon */
+.benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--Avenue-gold);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* 3. Rechter Container: Reservierung-Formular */
+.reservation-card {
+    background: var(--Avenue-white);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Labels & Inputs */
+label {
+    display: block;
+    text-transform: uppercase;
+    color: var(--Avenue-dark-grey-read);
+    font-weight: 550;
+
+
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 0;
+    border-radius: 0;
+    font-family: var(--paragraph-font), serif;
+    font-size: 1rem;
+    background-color: var(--Avenue-white);
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--Avenue-gold);
+    color: var(--Avenue-white-read);
+    padding: 18px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    background: var(--Avenue-gold-dark);
+}
+
+
+@media (max-width: 900px) {
+    .reservation-container {
+        grid-template-columns: 1fr; /* Stapelt Text und Formular */
+        padding: 60px 20px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .reservation-info h1 {
+        font-size: 2.8rem;
+    }
+
+    .reservation-info p {
+        margin: 0 auto;
+    }
+
+    .benefits li {
+        text-align: left;
+        max-width: 300px;
+        margin: 0 auto 15px;
+    }
+
+    .reservation-card {
+        padding: 30px 20px;
+    }
+
+    .reservation-form .form-row {
+        grid-template-columns: 1fr; /* Formularfelder untereinander auf dem Handy */
+        gap: 0;
+    }
+}

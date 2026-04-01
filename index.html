@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="de">
-<?php include 'includes/head.php'; ?>
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dummy SEO -->
+    <meta name="keywords" content="Hotel, Berlin, Hotel Berlin, Boutique Hotel, Luxus Hotel, Hotel Luxus, Hotel Luxury, Hotel Luxe, Hotel Lux">
+    <meta name="description" content="The Avenue Hotel - Modern Hospitality">
+    <title>The Avenue | Modern Hospitality</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/masonryGrid.css">
+    <link rel="stylesheet" href="css/sectionDark.css">
+    <link rel="stylesheet" href="css/sectionWhite.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/reservieren.css">
+</head>
+
 <body>
 <header>
-    <section class="hero">
+    <section class="hero" id="hero">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">Über uns</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="zimmer.html">Zimmer</a></li>
-                <li><a href="wellness.html">Wellness</a></li>
-                <li><a href="gastroRestaurant.html">Restaurant</a></li>
-                <li><a href="gastroBar.html">Bar</a></li>
-                <li><a href="reservierungsSektion.html">Reservieren</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#aboutUs">Über uns</a></li>
+            <li><a href="#konatkt">Kontakt</a></li>
+            <li><a href="zimmer.html">Zimmer</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="gastroRestaurant.html">Restaurant</a></li>
+            <li><a href="gastroBar.html">Bar</a></li>
+            <li><a href="reservierungsSektion.html">Reservieren</a></li>
+        </ul>
+    </nav>
 
         <div class="hero-content">
-            <img src="files/indexHero.png" alt="Lobby des Boutique Hotels" class="hero-img">
+            <img src="files/heroIndex.png" alt="Lobby des Boutique Hotels" class="hero-img">
             <h1>The Avenue | Modern Hospitality</h1>
         </div>
     </section>
 
     <div class="darkSection">
-        <section class="textContent">
+        <section class="textContentDarkSection">
             <h3>Die Kunst des Augenblicks</h3>
             <p>Wir verehren die Liebe zum Detail und die Zeit, die in den kleinen Dingen steckt.
                 Unser Ziel ist es, einen Ort zu schaffen, der verzaubert – ein Erlebnis,
@@ -37,66 +56,60 @@
 <div class="whiteSection">
     <section class="gridContent">
         <div class="masonry-item" style="aspect-ratio: 1 / 1;">
-            <img src="files/indexHero.png" alt="Hotel Zimmer">
+            <img src="files/heroIndex.png" alt="Hotel Zimmer">
         </div>
         <div class="masonry-item" style="aspect-ratio: 1 / 1;">
-            <img src="files/indexHero.png" alt="Frühstück">
+            <img src="files/heroIndex.png" alt="Frühstück">
         </div>
         <div class="masonry-item" style="aspect-ratio: 2 / 1;">
-            <img src="files/indexHero.png" alt="Wellness Bereich">
+            <img src="files/heroIndex.png" alt="Wellness Bereich">
         </div>
         <div class="masonry-item" style="aspect-ratio: 2 / 3;">
-            <img src="files/indexHero.png" alt="Kaffee">
+            <img src="files/heroIndex.png" alt="Kaffee">
         </div>
         <div class="masonry-item" style="aspect-ratio: 3 / 4;">
-            <img src="files/indexHero.png" alt="Lobby">
+            <img src="files/heroIndex.png" alt="Lobby">
         </div>
         <div class="masonry-item" style="aspect-ratio: 3 / 2;">
-            <img src="files/indexHero.png" alt="Restaurant">
+            <img src="files/heroIndex.png" alt="Restaurant">
         </div>
     </section>
 </div>
 
 <div class="darkSection">
-    <section class="aboutUs">
-        <section class="textContent">
-            <h3>Einleuchtend: Wie unser Hotel zu seinem Glanz kam</h3>
+    <section class="aboutUs" id="aboutUs">
+        <section class="textContentDarkSection">
+            <h3>Erleuchtend</h3>
             <p>Manche Hotels investieren Vermögen in Beleuchtungsdesigner.
                 Wir beim Avenue Hotel? Wir hatten... sagen wir, einen glücklichen Zufall.
                 Als unser Architekt vor Jahren versuchte, das Lichtdesign für die Lobby zu entwerfen,
-                war es ein besonders grauer, nebliger Tag. Frustriert über die schlechten Lichtverhältnisse,
-                warf er seinen Bleistift zur Seite und beschloss, sich ein Sandwich zu machen. Als er zurückkam,
-                sah er etwas Wunderschönes: Der Mond war kurz durch die Wolken gebrochen und ein einziger, warmer
-                Lichtstrahl fiel direkt auf das Sandwich-Papier, das er liegen gelassen hatte. Das Licht war sanft,
-                einladend und... naja, irgendwie magisch.
-            </p>
-
-            <p>
-                Von diesem Tag an war klar: Wir würden dieses Gefühl einfangen. Also, wenn du dich in unserem Hotel
-                besonders wohlfühlst und das Gefühl hast, dass das Licht genau richtig ist, dann denk an das Sandwich.
-                Es war der wahre Designer.
+                ...
             </p>
         </section>
     </section>
 </div>
 
 <div class="whiteSection">
-    <section class="kontakt">
-        <section class="textContent">
-            <h3>So Erreichen sie uns</h3>
-            <strong>Adresse</strong>
-            <p>Avenue Hotel<br>Prachtstraße 42<br>10117 Berlin, Deutschland</p>
+    <section class="kontakt" id="konatkt">
+        <section class="textContentWhiteSection">
 
-            <strong>Direkter Draht</strong>
-            <p>Telefon: +49 (0) 30 123 456 78<br>
-                E-Mail: hello@avenue-hotel.de</p>
+            <h3>So Erreichen sie uns</h3>
+            <p><strong>Avenue Hotel<br>123 Wien, Österreich</strong></p>
 
             <p><strong>Mit dem Auto:</strong> Nutzen Sie die Tiefgarage "Avenue Park" (Einfahrt Hintergasse).<br>
                 <strong>Öffentlich:</strong> U-Bahn Haltestelle "Avenue West" (U2/U5), nur 3 Gehminuten entfernt.</p>
+            <br>
+            <br>
+
+            <h2><strong>Kontakt</strong></h2>
+            <p><strong>Telefon: +43 (0) 30 123 456 78<br>
+                E-Mail: hello@avenue-hotel.de</strong></p>
+            <br>
 
             <p>
-                Haben Sie Fragen zu Ihrer Buchung oder spezielle Wünsche für Ihr Zimmer?
-                Unser Rezeptionsteam ist 24/7 für Sie da. Wir freuen uns auf Sie!
+                Haben Sie Fragen zu Ihrer Buchung oder spezielle Wünsche für Ihr Zimmer?<br>
+                Unser Rezeption ist 24/7 für Sie da.<br>
+                Wir freuen uns auf Sie!
             </p>
         </section>
     </section>
@@ -112,6 +125,7 @@
     </footer>
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/index.js"></script>
+<script src="js/portal.js"></script>
 </body>
 </html>

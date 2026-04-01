@@ -1,0 +1,35 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.5); /* Leichte Abdunklung für Lesbarkeit */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--Avenue-white-read);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: var(--Avenue-gold);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: flex-end; /* Burger-Icon nach rechts */
+        padding: 15px 20px;
+    }
+}
+
