@@ -26,10 +26,39 @@ nav a:hover {
     color: var(--Avenue-gold);
 }
 
+.menu-icon {
+    display: none;
+    color: var(--Avenue-white-read);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     nav {
-        justify-content: flex-end; /* Burger-Icon nach rechts */
+        display: flex;
+        justify-content: flex-end;
         padding: 15px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 }
 

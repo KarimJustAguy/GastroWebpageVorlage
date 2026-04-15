@@ -1,0 +1,62 @@
+.newsletter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Etwas dunkler für mehr Fokus auf de n Newsletter */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.newsletter-overlay.show {
+    display: flex;
+}
+
+.newsletter-modal {
+    background: var(--Avenue-white);
+    padding: 4rem;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Erzeugt Abstand über dem Eingabefeld */
+.newsletter-modal input[type="email"] {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter-modal button {
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+}
+
+input[type="email"] {
+    padding: 0.5rem;
+    width: 60%;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: 2px solid var(--Avenue-gold);
+    /* Ein Schatten in der gleichen Farbe */
+    box-shadow: 0 0 5px var(--Avenue-gold);
+}
+
+/* Styling für den Platzhalter-Text */
+input[type="email"]::placeholder {
+    color: var(--Avenue-stone-grey);
+    font-weight: 300;
+}

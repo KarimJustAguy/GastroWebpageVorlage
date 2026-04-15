@@ -5,7 +5,8 @@
     <!-- Mobile first -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Dummy SEO -->
-    <meta name="keywords" content="Hotel, Berlin, Hotel Berlin, Boutique Hotel, Luxus Hotel, Hotel Luxus, Hotel Luxury, Hotel Luxe, Hotel Lux">
+    <meta name="keywords"
+          content="Hotel, Berlin, Hotel Berlin, Boutique Hotel, Luxus Hotel, Hotel Luxus, Hotel Luxury, Hotel Luxe, Hotel Lux">
     <meta name="description" content="The Avenue Hotel - Modern Hospitality">
     <title>The Avenue | Modern Hospitality</title>
     <!-- Stylesheets -->
@@ -18,23 +19,23 @@
     <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="stylesheet" href="css/kontakt.css">
     <link rel="stylesheet" href="css/reservieren.css">
+    <link rel="stylesheet" href="css/newsLetterPopUp.css">
 </head>
 
 <body>
 <header>
     <section class="hero" id="hero">
         <nav>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#aboutUs">Über uns</a></li>
-            <li><a href="#konatkt">Kontakt</a></li>
-            <li><a href="zimmer.html">Zimmer</a></li>
-            <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="gastroRestaurant.html">Restaurant</a></li>
-            <li><a href="gastroBar.html">Bar</a></li>
-            <li><a href="reservierungsSektion.html">Reservieren</a></li>
-        </ul>
-    </nav>
+            <div id="menu-icon" class="menu-icon">☰</div>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="zimmer.html">Zimmer</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="gastroRestaurant.html">Restaurant</a></li>
+                <li><a href="gastroBar.html">Bar</a></li>
+                <li><a href="reservierungSektion.html">Reservieren</a></li>
+            </ul>
+        </nav>
 
         <div class="hero-content">
             <img src="files/heroIndex.png" alt="Lobby des Boutique Hotels" class="hero-img">
@@ -125,7 +126,23 @@
     </footer>
 </div>
 
+<!-- Newsletter Pop-Up -->
+<div id="newsletter-overlay" class="newsletter-overlay">
+    <div class="newsletter-modal">
+        <h2>The Avenue</h2>
+        <p>Erhalten Sie exklusiven Zugang zu unseren Suiten, privaten Events und exklusiven Angeboten. Wir spammen Sie gerne zu, als inspiration für ihre nächste Auszeit. :p</p>
+        <form>
+            <input type="email" placeholder="E-Mail" required>
+            <button type="submit" class="submit-btn" style="background: var(--Avenue-gold); color: white;">Abonnieren</button>
+            <button class="close-btn" id="close-newsletter" style="background: red; color: white;">&times;</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/newsLetterPopUp.js"></script>
+
 <script src="js/index.js"></script>
 <script src="js/portal.js"></script>
+<script src="js/navBar.js"></script>
 </body>
 </html>

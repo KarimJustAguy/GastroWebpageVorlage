@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezeption Dashboard | The Avenue</title>
+    <link rel="stylesheet" href="css/reservierungPortal.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <nav>
+        <ul>
+            <li><a href="reservierungsPortal.html">Eingang</a></li>
+            <li><a href="reservierungsPortalReservations.html">Reservierungen</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-header">
+        <h1>Reservierungen</h1>
+        <div class="header-actions">
+            <input type="text" id="search-input" placeholder="Gast suchen..." onkeyup="filterReservations()">
+        </div>
+    </header>
+
+    <table class="res-table">
+        <thead>
+        <tr>
+            <th>Gast / Kontakt</th>
+            <th>Anreise</th>
+            <th>Abreise</th>
+            <th>Kategorie</th>
+            <th>Gäste</th>
+            <th>Status</th>
+            <th>Aktion</th>
+        </tr>
+        </thead>
+        <tbody id="reservation-body">
+        </tbody>
+    </table>
+</div>
+
+<script src="js/navBar.js"></script>
+<script src="js/portal.js"></script>
+</body>
+</html>
