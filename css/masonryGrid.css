@@ -29,15 +29,29 @@
     transform: scale(1.05);
 }
 
-/* Responsive Design in 2 Schritten */
+.masonry-item img:hover {
+    transform: scale(1.05);
+}
+
+/*Um zu steuern, welche Bilder angezeigt werden sollen, 
+kann die zusätzliche Klasse priority zum class-Attribut
+des Elements masonry-item hinzugefügt werden. */
 @media (max-width: 900px) {
     .gridContent {
         column-count: 2;
+    }
+
+    .masonry-item:nth-child(n+4) {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
     .gridContent {
         column-count: 1;
+    }
+
+    .masonry-item:nth-child(n+3) {
+        display: none;
     }
 }
