@@ -5,7 +5,7 @@ function initNewsletter() {
     // Nach 3 Sekunden anzeigen
     setTimeout(() => {
         overlay.classList.add('show');
-    }, 1000);
+    }, 7000);
 
     // Schließ-Logik
     closeBtn.onclick = () => {

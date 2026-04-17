@@ -41,7 +41,7 @@ des Elements masonry-item hinzugefügt werden. */
         column-count: 2;
     }
 
-    .masonry-item:nth-child(n+4) {
+    .masonry-item:nth-child(n+5) {
         display: none;
     }
 }

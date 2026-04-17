@@ -4,6 +4,7 @@ function formatDate(dateString) {
     return parts.length === 3 ? `${parts[2]}.${parts[1]}.${parts[0]}` : dateString;
 }
 
+//Reservierungsportal Dashboard
 function displayReservations() {
     const tableBody = document.getElementById('reservation-body');
     if (!tableBody) return;
